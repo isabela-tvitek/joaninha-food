@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>joaninhaFood</title>
+  </head>
+
+  <link rel="stylesheet" href="./assets/resources/styles/cadastro.css" />
+  <link rel="stylesheet" href="./assets/resources/styles/padrão.css" />
+
+  <body onload='window.alert("Cadastre sua receita aqui")'>
+    <header>
+      <nav class="topo">
+        <a href="./index.html">
+          <img
+            src="./assets/resources/img/Logo2.png"
+            class="logo"
+            alt=" Logo joaninha food "
+          />
+        </a>
+
+        <div id="direita">
+          <input
+            type="text"
+            name="nome"
+            value=""
+            placeholder="Buscar receita"
+            id="buscar"
+          />
+          <button class="busca" type="button" onclick="pesquisa()"></button>
+          <button class="two" type="button" onclick="">
+            <a href="./resultados.html"> Todas as receitas </a>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Realizar cadastro da receita</h1>
+
+      <div id="cadastrar">
+        <form id="form">
+          <div id="cadastro">
+            <input
+              type="text"
+              id="nome-receita"
+              name="nomeReceita"
+              placeholder="Digite o nome da receita"
+              class="dados-basicos"
+              required
+            />
+            <input
+              type="url"
+              id="img"
+              name="image"
+              class="dados-basicos"
+              placeholder="Imagem da receita"
+              required
+            />
+            <input
+              type="text"
+              id="pessoa"
+              class="dados-basicos"
+              name="pessoa"
+              value=""
+              required
+              placeholder="Digite seu nome completo"
+            />
+            <input
+              type="text"
+              id="email"
+              class="dados-basicos"
+              name="email"
+              value="" 
+              pattern ="\w+@\w+\.\w{3}"
+              required
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+
+          <div id="mensagem">
+            <label for="mensagem">Digite a sua Receita:</label>
+            <textarea id="descricao"></textarea>
+          </div>
+
+          <button type="submit" id="button">Cadastro</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Contatos pelo e-mail:<a href="joaninhaFood@foof.com"
+          >joaninhaFood@foof.com</a
+        >
+        ou pelo telefone: (42)9-9999-9999.
+      </p>
+    </footer>
+
+    <script src="./assets/resources/scripts/cadastro.js"></script>
+    <script src=".//assets/resources/scripts/dados.js"></script>
+  </body>
+</html>
+
+
+

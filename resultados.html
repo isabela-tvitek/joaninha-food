@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joaninhaFood</title>
+</head>
+
+<link rel="stylesheet" href="./assets/resources/styles/resultados.css">
+<link rel="stylesheet" href="./assets/resources/styles/padrão.css">
+
+
+<body>
+    <header>
+        <nav class="topo">
+            <a href="./index.html"> <img src="./assets/resources/img/Logo2.png" class="logo" alt=" Logo joaninha food "> </a>
+            
+            <div id="direita">
+                <input type="text" name="nome" onsubmit="return validaCampo()" placeholder="Buscar receita" id = "buscar">
+                <button class = "busca" type="button" onclick="pesquisa()">
+                <!-- <button class = "busca" type="button" onclick=""><img src="./img/procurar.png" alt=""></img></button>  -->
+                
+
+                <button class = "two" type="button" onclick="">
+                    <a href="./resultados.html"> Todas as receitas </a>
+                </button>        
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Receitas Encontradas</h1>  
+        <div class="todas">
+          
+                <!-- <article>
+                    <img src="./img/macarrao.jpg"> </img>
+                    <h3>Receita de macarrão de panela de pressão</h3>
+                    <a href="./receitas.html">ver receita</a>
+                </article>
+                
+                <article>
+                    <img src="./img/macarrao.jpg"> </img>
+                    <h3>Receita de macarrão de panela de pressão</h3>
+                    <a href="./receitas.html">ver receita</a>
+                </article> -->
+
+                <!-- <article class="receita">
+                    <img id="img" src="./img/macarrao.jpg"> </img>
+                    <h3 id="nome-receita"></h3>
+                    <p id="pessoa"> </p>
+                    <a href="./receitas.html"></a>
+                </article> -->
+
+                <div class="receitas"></div>
+
+                <!-- <article class="receita">
+                    <img src="{{ place.img }}" alt="{{ place.name }}">
+                    <h3>{ {place.nome-receita }}</h3>
+                    <p>{{ place.pessoa }}</p>
+                    <a href="./receitas.html"></a>
+                </article> -->
+
+        </div>
+</main>
+
+    <footer>
+        <p>Contatos pelo e-mail:<a href="joaninhaFood@foof.com">joaninhaFood@foof.com</a> ou pelo telefone: (42)9-9999-9999.</p>
+    </footer>
+
+    <script src="./assets/resources/scripts/resultados.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+main{
+    padding: 24px;
+    background: #f1f1f7;
+}
+
+div h1{
+    font-family: roboto;
+    font-size: 45px;
+    text-align: center;
+    color: #FF525C;
+}
+
+
+div{
+    padding: 35px;
+}
+
+div p{
+    font-size: 20px;
+}
+
+main button{
+    width: 240px;
+    font-size: 17px;
+    font-family: roboto;
+    border-radius: 20px;
+    height: 50px;
+    border: 1px #FF525C;
+    background: #ff525cde;
+    color: #FFFFFF;
+    margin-left: 85px;
+}

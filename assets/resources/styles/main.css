@@ -1,0 +1,39 @@
+
+main{
+    padding: 50px;
+    background: #f1f1f7;
+}
+
+main h1{
+    font-family: roboto;
+    font-size: 63px;
+    color: #FF525C;
+}
+
+main p{
+    font-family: Roboto;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 53px;
+}
+
+main #cadastro{
+    font-family: roboto;
+    color: #FF525C;
+    font-size: 23px;
+    display: flex;
+    justify-content:center;
+    padding-left: 55px;
+}
+
+main #cadastro button{
+    width: 283px;
+    border-radius: 20px;
+    height: 45px;
+    border: 1px #FF525C;
+    background: #ff525cde;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family: roboto;
+    
+}

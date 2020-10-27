@@ -1,0 +1,50 @@
+main{
+    padding: 24px;
+    background: #f1f1f7;
+}
+
+main h1{
+    font-family: roboto;
+    font-size: 38px;
+    text-align: center;
+    color: #FF525C;
+}
+
+
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 66px;
+}
+
+article{
+    background: #80808038;
+    border-radius: 10px;
+    width: 23vw;
+    margin: 10px;
+}
+
+article h3{
+    font-size: 14px;
+    text-align: center;
+    color: #FF525C;
+    margin: 3px;
+}
+
+article img{
+    border-radius: 35px;
+    padding: 20px;
+    width: 20vw;
+    height: 20vh;
+}
+
+article a{
+    margin: 20px;
+}
+
+article p{
+    margin: 10px;
+    font-size: 16px;
+    font-family: roboto;
+    color: #ff0f1d;
+}
