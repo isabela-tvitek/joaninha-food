@@ -37,3 +37,14 @@ main #cadastro button{
     font-family: roboto;
     
 }
+
+span{
+    font-size: 16px;
+    margin: 20px;
+    color: #da1b1b;
+}
+h2{
+    font-size: 17px;
+    margin: 0 0 8px 18px;
+    color: #ff0147;
+}

@@ -4,7 +4,7 @@ function restoreArrayDados() {
   console.log('Restaurando um vetor de objetos do local storage.');
   // console.log(JSON.parse(localStorage.getItem('dados')) +"aqui");
 
-  let myArrayReceita = JSON.parse(localStorage.getItem('cadrastro'));
+  let myArrayReceita = JSON.parse(localStorage.getItem('dados-basicos'));
 
   // console.log(myArrayReceita);
 

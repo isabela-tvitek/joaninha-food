@@ -54,3 +54,31 @@ let validaCampo = function () {
        
       */
 };
+
+$(document).ready(function(){
+      $('#adiciona').click(function(){
+            // console.log('texte');
+        $('span').addClass('blue');
+      });
+    });
+
+
+ $(document).ready(function(){
+      $('#remove').click(function(){
+            // console.log('texte2');
+        $('span').removeClass('blue');
+      });
+    });
+
+
+ $('span').click(function(){        
+       $('body>h2').slideDown('slow').delay(1000).slideUp('slow');                
+});
+
+  
+
+// let add = id('add'); 
+
+// add.addEventListener('onclic', (event) => {
+//       css(, “valor”) –
+// });

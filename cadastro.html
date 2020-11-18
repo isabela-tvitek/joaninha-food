@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>joaninhaFood</title>
+   
   </head>
 
   <link rel="stylesheet" href="./assets/resources/styles/cadastro.css" />
   <link rel="stylesheet" href="./assets/resources/styles/padrão.css" />
+
 
   <body onload='window.alert("Cadastre sua receita aqui")'>
     <header>
@@ -77,17 +79,31 @@
               required
               placeholder="Digite seu e-mail"
             />
+            <input
+              type="text"
+              id="campoData"
+              class="dados-basicos"
+              name="data"
+              value="" 
+              maxlength="10"
+              required
+              placeholder="Data"
+            />
+            
           </div>
 
           <div id="mensagem">
             <label for="mensagem">Digite a sua Receita:</label>
-            <textarea id="descricao"></textarea>
+            <textarea name="descricao" id="descricao" required></textarea>
           </div>
+          
 
           <button type="submit" id="button">Cadastro</button>
         </form>
       </div>
+
     </main>
+
 
     <footer>
       <p>
@@ -100,6 +116,8 @@
 
     <script src="./assets/resources/scripts/cadastro.js"></script>
     <script src=".//assets/resources/scripts/dados.js"></script>
+   <script src="http://code.jquery.com/jquery-2.1.4.min.js"> </script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   </body>
 </html>
 

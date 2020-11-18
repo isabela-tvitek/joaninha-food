@@ -6,6 +6,8 @@ let form = id('form');
 let todosOsInputs = document.getElementsByClassName('dados-basicos');
 let nomeReceita = id('nome-receita');
 let img = id('img');
+let data = id('campoData')
+let add = id('add');
 /**  let pessoa = id('pessoa');
 let email = id('email');*/
 
@@ -62,6 +64,22 @@ let email = id('email');*/
     }
   });
 
+$(function() {
+  $('#campoData').mask('00/00/0000');
+    $('.placeholder').mask('00/00/0000', {placeholder: '__/__/____'});
+    $('.fallback').mask('00r00r0000', {
+      translation: {
+        'r': {
+          pattern: /[\/]/,
+          fallback: '/'
+        },
+        placeholder: '__/__/____'
+      }
+    });
+  
+    $('.selectonfocus').mask('00/00/0000', {selectOnFocus: true});
+});
+
   let confirmarEmail = () => {
     let confirma = window.prompt('confirme seu email para continuar');
     let email = document.getElementById('email').value;
@@ -73,6 +91,8 @@ let email = id('email');*/
     }
   };
 
+  $('#descricao').text('A receita de ...');
+  
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     let dados = event.target;
@@ -103,4 +123,6 @@ let email = id('email');*/
 
   botao.addEventListener('mouseenter', () => mouseEnter());
   botao.addEventListener('mouseout', () => mouseOver());
+
 })();
+
