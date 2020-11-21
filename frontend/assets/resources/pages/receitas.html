@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joaninhaFood</title>
+</head>
+
+<link rel="stylesheet" href="../styles/receita.css">
+<link rel="stylesheet" href="../styles/padrão.css">
+<link rel="stylesheet" href="../styles/responsivo.css"/>
+
+
+<body>
+    <header>
+        <nav class="topo">
+            <a href="./index.html"> <img src="../img/Logo2.png" class="logo" alt=" Logo joaninha food "> </a>
+            
+            <div id="direita">
+                <input type="text" name="nome" onsubmit="return validaCampo()" placeholder="Buscar receita" id = "buscar">
+                <button class = "busca" type="button" onclick="pesquisa()"></button> 
+
+                
+
+                <button class = "two" type="button" onclick="">
+                    <a href="./resultados.html"> Todas as receitas </a>
+                </button>        
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="geral"></div> 
+        <button type="button" onclick="mostraNome(leNome)">Clique para rever o nome de quem criou</button>
+
+    </main>
+
+   
+    <footer>
+        <p>Contatos pelo e-mail:<a href="joaninhaFood@foof.com">joaninhaFood@foof.com</a> ou pelo telefone: (42)9-9999-9999.</p>
+    </footer>
+
+    
+    <script src="../scripts/receita.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+</body>
+</html>
