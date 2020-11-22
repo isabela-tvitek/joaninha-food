@@ -1,12 +1,6 @@
 'use strict';
 
 
-(function buscarInformacoes() {
-      $.get('http://localhost:3000/', function (data) {
-            renderizarInformacoes(data);
-      });
-})();
-
 
 window.onload = function () {
       setTimeout(function () {
@@ -24,33 +18,6 @@ function confirmar() {
 let id = function (id) {
       return document.getElementById(id);
 };
-
-// let validaCampo = function () {
-
-//       let valor = id('buscar').value;
-
-//       if ((valor === undefined) || (valor === '')) {
-//             window.alert('O campo não foi preenchido');
-//       }
-
-//       let myArrayReceita = JSON.parse(localStorage.getItem('dados'));
-//       let index = [];
-//       let i;
-
-//       for (let receita of myArrayReceita) {
-//             // console.log(receita.indexOf(receita));
-//             if (valor === receita.nomeReceita) {
-//                   index[i] = receita.indexOf(receita);
-//             }
-//       }
-//       console.log(index);
-
-//       /**  for(let i = 0; i < index.length; i++){
-//              console.log(myArrayReceita[i])
-//              console.log(index[i])
-       
-//       */
-// };
 
 
 $(document).ready(function () {
@@ -81,9 +48,43 @@ function renderizarInformacoes(data){
       document.getElementById('logo').setAttribute('src', data.imagem);
 }
 
+(function buscarInformacoes() {
+      $.get('http://localhost:3000/', function (data) {
+            renderizarInformacoes(data);
+      });
+})();
+
 
 // let add = id('add'); 
 
 // add.addEventListener('onclic', (event) => {
-//       css(, “valor”) –
-// });
+      //       css(, “valor”) –
+      // });
+      
+      // let validaCampo = function () {
+      
+            //       let valor = id('buscar').value;
+      
+      //       if ((valor === undefined) || (valor === '')) {
+            //             window.alert('O campo não foi preenchido');
+      //       }
+      
+      //       let myArrayReceita = JSON.parse(localStorage.getItem('dados'));
+      //       let index = [];
+      //       let i;
+      
+      //       for (let receita of myArrayReceita) {
+            //             // console.log(receita.indexOf(receita));
+            //             if (valor === receita.nomeReceita) {
+                  //                   index[i] = receita.indexOf(receita);
+                  //             }
+                  //       }
+      //       console.log(index);
+      
+      //       /**  for(let i = 0; i < index.length; i++){
+      //              console.log(myArrayReceita[i])
+      //              console.log(index[i])
+             
+      //       */
+      // };
+      

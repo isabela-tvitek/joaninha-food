@@ -38,6 +38,11 @@ setInterval(function () {
 }, 600000);
 
 
+
+function renderizarInformacoes(data){
+  document.getElementById('logo').setAttribute('src', data.imagem);
+}
+
 (function buscarInformacoes() {
   $.get('http://localhost:3000/', function (data) {
         renderizarInformacoes(data);

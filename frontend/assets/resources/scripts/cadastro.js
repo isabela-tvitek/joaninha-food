@@ -112,6 +112,13 @@ let img = id('img');
 
 })();
 
+
+function renderizarInformacoes(data){
+  document.getElementById('nomeDoSite').innerText = data.nome;
+  document.getElementById('cidade').innerText = data.cidade;
+  document.getElementById('logo').setAttribute('src', data.imagem);
+}
+
 (function buscarInformacoes() {
   $.get('http://localhost:3000/', function (data) {
         renderizarInformacoes(data);

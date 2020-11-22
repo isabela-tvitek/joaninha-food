@@ -1,12 +1,5 @@
 'use strict';
 
-(function buscarInformacoes() {
-  $.get('http://localhost:3000/', function (data) {
-        renderizarInformacoes(data);
-  });
-})();
-
-
 function atualizarInformacoes(event) {
     event.preventDefault();
     let dados = event.target;
@@ -31,3 +24,14 @@ function atualizarInformacoes(event) {
       url: 'http://localhost:3000/alterar-info'
     });
   }
+
+
+function renderizarInformacoes(data){
+  document.getElementById('logo').setAttribute('src', data.imagem);
+}
+
+(function buscarInformacoes() {
+  $.get('http://localhost:3000/', function (data) {
+        renderizarInformacoes(data);
+  });
+})();

@@ -30,11 +30,15 @@ let leNome=(pessoa) => {
 };
 
 function mostraNome (leNome) {
-    let pessoa = document.getElementById('pessoa');
+    let pessoa = document.getElementsByName('pessoa');
     leNome(pessoa);
 }
 
 
+function renderizarInformacoes(data){
+    document.getElementById('logo').setAttribute('src', data.imagem);
+}
+  
 (function buscarInformacoes() {
     $.get('http://localhost:3000/', function (data) {
           renderizarInformacoes(data);
