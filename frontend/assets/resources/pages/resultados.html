@@ -15,20 +15,21 @@
 <body>
     <header>
         <nav class="topo">
-            <a href="./index.html"> <img src="../img/Logo2.png" class="logo" alt=" Logo joaninha food "> </a>
+            <a href="./index.html"> <img id="logo" class="logo" alt="Logo"> </a>
+  
             
             <div id="direita">
-                <input type="text" name="nome" onsubmit="return validaCampo()" placeholder="Buscar receita" id = "buscar">
-                <button class = "busca" type="button" onclick="pesquisa()">
-                <!-- <button class = "busca" type="button" onclick=""><img src="./img/procurar.png" alt=""></img></button>  -->
+                <button id = "buscar" type="button" onclick="">
+                    <a href="./atualizarDados.html"> Mudanças </a>
+                </button>  
                 
-
+  
                 <button class = "two" type="button" onclick="">
                     <a href="./resultados.html"> Todas as receitas </a>
                 </button>        
             </div>
         </nav>
-    </header>
+      </header>
 
     <main>
         <h1>Receitas Encontradas</h1>  

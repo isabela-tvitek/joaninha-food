@@ -1,49 +1,51 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>joaninhaFood</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
-<link rel="stylesheet" href="../styles/receita.css">
+<link rel="stylesheet" href="../styles/atualizarDados.css">
 <link rel="stylesheet" href="../styles/padrão.css">
 <link rel="stylesheet" href="../styles/responsivo.css"/>
-
 
 <body>
     <header>
         <nav class="topo">
             <a href="./index.html"> <img id="logo" class="logo" alt="Logo"> </a>
-  
+
             
             <div id="direita">
                 <button id = "buscar" type="button" onclick="">
                     <a href="./atualizarDados.html"> Mudanças </a>
                 </button>  
                 
-  
+
                 <button class = "two" type="button" onclick="">
                     <a href="./resultados.html"> Todas as receitas </a>
                 </button>        
             </div>
         </nav>
-      </header>
+    </header>
 
     <main>
-        <div class="geral"></div> 
-        <button type="button" onclick="mostraNome(leNome)">Clique para rever o nome de quem criou</button>
-
+        <h1>Realizar as mudanças do site</h1>
+        
+        <form onsubmit="atualizarInformacoes(event)">
+            <input name="nome" placeholder="Nome do site" type="text">
+            <input name="imagem" placeholder="Url da imagem" type="url">
+            <input name="cidade" placeholder="Cidade" type="text">
+            <button type="submit">Enviar</button>
+        </form> 
     </main>
 
-   
     <footer>
         <p>Contatos pelo e-mail:<a href="joaninhaFood@foof.com">joaninhaFood@foof.com</a> ou pelo telefone: (42)9-9999-9999.</p>
-    </footer>
+   </footer>
 
-    
-    <script src="../scripts/receita.js"></script>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"> </script>
+   <script src="http://code.jquery.com/jquery-2.1.4.min.js"> </script>
 
+   <script src="../scripts/atualizarDados.js"></script>
 </body>
+
 </html>

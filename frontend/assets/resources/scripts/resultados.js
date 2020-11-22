@@ -1,5 +1,6 @@
 'use strict';
 
+
 function restoreArrayDados() {
   console.log('Restaurando um vetor de objetos do local storage.');
   // console.log(JSON.parse(localStorage.getItem('dados')) +"aqui");
@@ -35,3 +36,10 @@ setInterval(function () {
   window.location.reload();
   window.alert('a pagina foi recarregada');
 }, 600000);
+
+
+(function buscarInformacoes() {
+  $.get('http://localhost:3000/', function (data) {
+        renderizarInformacoes(data);
+  });
+})();

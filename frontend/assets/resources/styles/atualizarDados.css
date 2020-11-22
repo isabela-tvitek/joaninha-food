@@ -1,0 +1,50 @@
+
+main {
+    height: 211px;
+    font-family: roboto;
+    background: #f1f1f7;
+    font-size: 23px;
+    padding: 55px;
+    
+}
+
+main h1{
+    font-family: roboto;
+    font-size: 38px;
+    text-align: center;
+    color: #FF525C;
+}
+
+main  input{
+  
+    font-family: roboto;
+    border: 1px #FF525C;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    height: 3rem;
+    width: 14rem;
+    font-size: 16px;
+    margin: 0 0 8px 10px;
+}
+
+
+main button{
+    width: 240px;
+    font-size: 17px;
+    font-family: roboto;
+    border-radius: 20px;
+    height: 50px;
+    border: 1px #FF525C;
+    background: #ff525cde;
+    color: #FFFFFF;
+    margin-left: 85px;
+    cursor: pointer;
+}
+main button:hover{
+    opacity: 0.8;
+    transition: ease-in-out 0.3s;
+}
+
+

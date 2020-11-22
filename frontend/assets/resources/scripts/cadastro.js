@@ -6,9 +6,7 @@ let form = id('form');
 let todosOsInputs = document.getElementsByClassName('dados-basicos');
 let nomeReceita = id('nome-receita');
 let img = id('img');
-// let add = id('add');
-/**  let pessoa = id('pessoa');
-let email = id('email');*/
+
 
 (function () {
   let localstorage = JSON.parse(localStorage.getItem('dados'));
@@ -114,16 +112,8 @@ let email = id('email');*/
 
 })();
 
-
-
-
-  // let data = id('campoData');
-
-  // $('#campoData').onkeypress = function (event) {
-   
-  //   let number = event.charCode;
-  //   if (number >= 48 && number <= 57) {
-  //     event.preventDefault();
-  //   }
-  // };
-
+(function buscarInformacoes() {
+  $.get('http://localhost:3000/', function (data) {
+        renderizarInformacoes(data);
+  });
+})();

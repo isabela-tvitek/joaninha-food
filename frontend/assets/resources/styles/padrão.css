@@ -38,20 +38,8 @@ nav #buscar{
     text-align: center;
     color: #FF525C;
     background: #ffffff59;
-    border-radius: 16px 0 0 16px;
+    border-radius: 13px;
     border: 1px #ffffff59;
-}
-
-nav button.busca
-    {width: 15px;
-    height: 15px;
-    padding: 20px;
-    border-radius: 0 8px 8px 0;
-    font-family: Roboto;
-    font-size: 14px;
-    color: #FF525C;
-    border: 1px white;
-    background: #ffffff url(../img/pesquisa.png) no-repeat center;
 }
 
 nav .two{

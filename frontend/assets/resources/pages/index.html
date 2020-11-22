@@ -17,42 +17,27 @@
 
 
 <body>
-    
-
     <header>
         <nav class="topo">
-            <a href="./index.html"> <img src="../img/Logo2.png" class="logo" alt="Logo joaninha food"> </a>
+            <a href="./index.html"> <img id="logo" class="logo" alt="Logo"> </a>
 
             
             <div id="direita">
-                <input type="text" name="nome" placeholder="Buscar receita" id = "buscar">
-                <button class = "busca" type="button" onclick="validaCampo()" ></button> 
+                <button id = "buscar" type="button" onclick="">
+                    <a href="./atualizarDados.html"> Mudanças </a>
+                </button>  
+                
 
                 <button class = "two" type="button" onclick="">
                     <a href="./resultados.html"> Todas as receitas </a>
                 </button>        
             </div>
         </nav>
-        
-        <!--  arrumar os links do menu
-
-         <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo">Logo</a>
-               <ul id="nav-mobile" class="right hide-on-med-and-down">
-                 <li><a href="sass.html">Sass</a></li>
-                 <li><a href="badges.html">Components</a></li>
-                 <li><a href="collapsible.html">JavaScript</a></li>
-               </ul>
-             </div>
-           </nav> -->
-                 
     </header>
 
-    
     <main>
-        <h1>Joaninha Food</h1>
-        <p>O melhor site de receitas de Guarapuava <br>
+        <h1 id="nomeDoSite">Joaninha Food</h1>
+        <p>O melhor site de receitas de <strong id="cidade"></strong> <br>
         Pesquise as receitas que deseja e/ou cadastre novas <p>
 
         <div id="cadastro">
@@ -78,7 +63,6 @@
          <p>Contatos pelo e-mail:<a href="joaninhaFood@foof.com">joaninhaFood@foof.com</a> ou pelo telefone: (42)9-9999-9999.</p>
     </footer>
 
-    
     <script src="../scripts/main.js"></script>
     <!-- <script src="assets/scripts/index.js"></script> -->
   

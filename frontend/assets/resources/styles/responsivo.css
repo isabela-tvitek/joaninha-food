@@ -27,11 +27,6 @@
     
     }
 
-    nav button.busca{
-        padding: 14px;
-    
-    }
-
     nav .two{ 
         width: 128px;
         height: 28px;
@@ -70,10 +65,7 @@
         height: 21px;
         font-size: 11px;
     }
-    nav button.busca {
-        padding: 11.2px;
-    }
-
+    
     nav .two {
         width: 102px;
         height: 22px;
