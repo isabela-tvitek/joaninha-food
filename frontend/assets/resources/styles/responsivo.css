@@ -37,10 +37,12 @@
     a:-webkit-any-link {
         font-size: 14px;
     }
+
     nav img {
     width: 122px;
     margin-left: 20px;
     }
+
     #cadastrar{
         flex-direction: column;
         grid-template-columns: 1fr;
@@ -78,6 +80,11 @@
     main button {
         margin-left: -4px;
     }
+    
+    main #cadastrar {
+        padding: 20px;
+    }
+
 
     #mensagem textarea {
         height: 17vh;
@@ -87,3 +94,19 @@
 
 }
 
+@media(max-width:300px){
+    main {
+        padding: 13px;
+        background: #f1f1f7;
+    }
+
+    main #cadastrar {
+        padding: 14px;
+    }
+
+    #mensagem textarea {
+        height: 20vh;
+        width: 73vw;
+        margin-left: 1px;
+    }
+}
