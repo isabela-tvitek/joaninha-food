@@ -108,10 +108,8 @@ let img = id('img');
   $('#campoData').mask('00/00/0000');
 
   $('#descricao').text('A receita de ...');
-  
 
 })();
-
 
 function renderizarInformacoes(data){
   document.getElementById('nomeDoSite').innerText = data.nome;
