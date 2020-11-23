@@ -34,8 +34,8 @@ Acesso aos elementos DOM do HTML
 
 - [x] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
-- [ ] Via getElementsByName()
-- [x] Via getElementsByTagName()
+- [x] Via getElementsByName()
+- [ ] Via getElementsByTagName()
 - [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
@@ -47,9 +47,9 @@ Tratadores de Evento
 
 Objetos Nativos
 
-- [ ] Usar pelo menos 3 métodos de manipulação de array
+- [x] Usar pelo menos 3 métodos de manipulação de array (1/3)
 - [x] Usar laço de repetição (for..in ou for..of ou forEach)
-- [ ] Usar pelo menos 3 métodos para manipulação de string
+- [x] Usar pelo menos 3 métodos para manipulação de string(1/3)
 - [x] String Template
 
 Objetos
@@ -83,7 +83,7 @@ Formulário
 jQuery
 
 - [x] Uso de seletores CSS - id, classe e tag
-- [ ] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
+- [x] Uso de seletores hierárquicos estáticos - ancestral/descendente, pai/filho, anterior/próximo
 - [ ] Uso de seletores hierárquicos dinâmicos - parent/children/next
 - [x] Efeitos fade ou slide
 - [x] Especificar o tratador de algum evento via jQuery
@@ -96,4 +96,7 @@ Web Storage
 - [x] LocalStorage ou SessionStorage
 - [x] Leitura e escrita de dados simples
 - [x] Leitura e escrita de JSON
+
+AJAX
+
 - [x] Implementação funcional (basta fazer funcionar uma requisição) do backend em ExpressJS na plataforma Node e requisições AJAX.
