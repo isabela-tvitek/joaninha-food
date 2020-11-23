@@ -1,6 +1,5 @@
 'use strict';
 
-
 function restoreArrayDados() {
   console.log('Restaurando um vetor de objetos do local storage.');
   // console.log(JSON.parse(localStorage.getItem('dados')) +"aqui");
