@@ -48,3 +48,67 @@ main button:hover{
 }
 
 
+
+
+@media (max-width:600px){
+   
+    main {
+        height: 73vw;
+        padding: 31px;
+    }
+    
+    form{
+        margin-left: 105px;
+    }
+
+    main button{
+        margin: 23px 0 0 0;
+    }
+}
+
+@media (max-width:500px){
+
+    main {
+        height: 90vw;
+        padding: 1px;
+    }
+    
+    
+
+}
+
+@media (max-width: 450px){
+
+    main {
+        height: 130vw;
+        padding: 1px;
+    }
+
+    main h1 {
+        font-family: roboto;
+        font-size: 27px;
+        text-align: center;
+        color: #FF525C;
+    
+    }
+}
+
+@media (max-width: 400px){
+
+    form {
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 300px){
+    
+    form {
+        margin-left: 11px;
+    }
+
+    main{
+        width: 91vw;
+    }
+    
+    
+}
