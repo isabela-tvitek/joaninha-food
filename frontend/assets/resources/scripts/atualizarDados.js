@@ -25,7 +25,6 @@ function atualizarInformacoes(event) {
     });
   }
 
-
 function renderizarInformacoes(data){
   document.getElementById('logo').setAttribute('src', data.imagem);
 }
