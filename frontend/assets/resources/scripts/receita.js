@@ -16,7 +16,6 @@
 
 })();
 
-
 let leNome=(pessoa) => {
     let myArrayReceita = JSON.parse(localStorage.getItem('dados'));
 
